@@ -34,5 +34,23 @@
                 </configuration>
             </plugin>
         </plugins>
+             <distributionManagement>
+   <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://192.168.254.155:8081/repository/Cloud-Gen-Release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://192.168.254.155:8081/repository/Cloud-Gen-Snap/</url>
+        </snapshotRepository>
+    <site>
+      <id>site-server</id>
+      <name>Test Project Site</name>
+      <url>file:///tmp/maven-project-site</url>
+    </site>
+  </distributionManagement>
     </build>
+         
 </project>
