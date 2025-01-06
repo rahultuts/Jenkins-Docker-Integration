@@ -13,6 +13,14 @@ pipeline {
 				git branch: 'main', url: 'https://github.com/Cloud-Gen-DevOps-Projects/Jenkins-Docker-Integration.git'
 			}
 		}
+		stage("Code Qulity Check"){
+			steps{
+				withSonarQubeEnv('sonar-token') {
+					sh "mvn clean install sonar:sonar"
+
+					}
+			}
+		}
 
 
 	}
