@@ -25,12 +25,12 @@
    <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://192.168.254.155:8081/repository/maven-releases/</url>
+            <url>http://192.168.254.155:8081/repository/DevOps-Cloud-Release/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://192.168.254.155:8081/repository/maven-snapshots/</url>
+            <url>http://192.168.254.155:8081/repository/DevOps-Cloud-Snapshot/</url>
         </snapshotRepository>
     <site>
       <id>site-server</id>
