@@ -4,9 +4,6 @@ pipeline {
     maven "maven3"
     jdk "jdk17"
   }
-  environment {
-    SCANNER_HOME = tool 'sonar-token'
-  }
   stages {
     stage("Code Checkout") {
       steps {
